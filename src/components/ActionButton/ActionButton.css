@@ -1,0 +1,27 @@
+.action-btn {
+	display: inline-flex;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 1.6rem;
+	font-weight: 600;
+	transition: opacity 0.2s ease;
+}
+
+.action-btn:hover {
+	 opacity: 0.5;
+}
+
+.action-btn img {
+	margin-right: 0.5rem;
+}
+
+.action-reply,
+.action-edit {
+	color: var(--purple-600);
+}
+
+.action-delete {
+	color: var(--pink-400);
+}

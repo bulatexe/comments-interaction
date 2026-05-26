@@ -1,0 +1,131 @@
+
+.comment {
+  min-width: 36rem;
+}
+
+.comment__replies {
+	position: relative;
+  margin-left: 16px;
+  padding-left: 16px;
+  list-style: none;
+}
+
+.comment__replies::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--grey100);
+}
+
+.comment__wrap {
+  background-color: var(--white);
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.comment__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment__user-info {
+  display: flex;
+  align-items: center;
+}
+
+.comment__user-info img {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.comment__score {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.5rem;
+}
+
+.comment__score-value {
+  display: inline-block;
+  font-size: 1.8rem;
+  background-color: var(--grey50);
+  text-align: center;
+  color: var(--purple-600);
+}
+
+.comment__user-info > * {
+  margin-right: 1.5rem;
+}
+
+.comment__username {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.comment__content {
+  flex: 1;
+}
+
+.comment__text {
+  margin-top: 1.5rem;
+  color: var(--grey500);
+}
+
+.comment__createAt {
+  color: var(--grey500);
+}
+
+.comment__controls {
+  display: flex;
+  align-items: center;
+}
+
+.comment__controls .action-btn {
+  margin-right: 1rem;
+}
+
+.comment__controls .action-btn:last-child {
+  margin-right: 0;
+}
+
+.comment__badge {
+  display: inline-block;
+  background-color: var(--purple-600);
+  color: var(--white);
+  padding: 0.2rem;
+  font-size: 1rem;
+  margin-left: 0.4rem;
+}
+
+.comment__username-reply {
+  color: var(--purple-600);
+}
+
+@media (max-width: 48em) {
+  .comment__wrap {
+    position: relative;
+    flex-direction: column;
+  }
+  .comment__score {
+    order: 2;
+    flex-direction: row;
+    align-items: center;
+  }
+  .comment__controls {
+    position: absolute;
+    bottom: 2.8rem;
+    right: 2rem;
+  }
+  .comment__controls .action-btn {
+    margin-right: 0.5rem;
+  }
+  .comment__text {
+    margin-bottom: 1rem;
+  }
+}

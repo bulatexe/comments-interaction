@@ -1,0 +1,11 @@
+.score-button {
+	background-color: var(--grey50);
+	border: none;
+	width: 3.6rem;
+	height: 3.6rem;
+	cursor: pointer;
+}
+
+.score-button.active svg path {
+	fill: var(--purple-600);
+}

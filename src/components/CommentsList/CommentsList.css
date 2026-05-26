@@ -1,0 +1,6 @@
+.comments__list {
+	list-style: none;
+	padding: 0 2rem;
+	margin: 6rem 0 0 0;
+	overflow: auto;
+}

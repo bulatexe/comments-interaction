@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --purple-600: hsl(238, 40%, 52%);
+  --pink-400: hsl(358, 79%, 66%);
+  --purple-200: hsl(239, 57%, 85%);
+  --pink-200: hsl(357, 100%, 86%);
+  --grey800: hsl(212, 24%, 26%);
+  --grey500: hsl(211, 10%, 45%);
+  --grey100: hsl(223, 19%, 93%);
+  --grey50: hsl(228, 33%, 97%);
+  --white: hsl(0, 100%, 100%);
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  min-width: 32rem;
+}
+
+#root {
+  max-width: 100%;
+  min-height: 100svh;
+  box-sizing: border-box;
+  background-color: var(--grey50);
+}

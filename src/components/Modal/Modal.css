@@ -1,0 +1,58 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  width: min(35rem, 90%);
+  background: var(--white);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.2s ease;
+}
+
+.modal h2 {
+	margin-top: 0;
+	font-size: 2rem;
+}
+
+.modal p {
+	color: var(--grey500);
+}
+
+.modal__controls button {
+	margin-right: 1rem;
+}
+
+.modal__controls button:last-child {
+	margin-right: 0;
+}
+
+.modal__close {
+	background-color: var(--grey500);
+	color: var(--white);
+	padding: 1.2rem 2rem;
+	border:none;
+	border-radius: 0.5rem;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+
+.modal__submit {
+	color: var(--white);
+	padding: 1.2rem 2rem;
+	border:none;
+	border-radius: 0.5rem;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+
+.modal__submit.delete {
+	background-color: var(--pink-400);
+}
